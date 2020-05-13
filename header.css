@@ -88,7 +88,6 @@ nav {
   display: flex;
   justify-content: right;
   color: var(--black-color);
-  justify-content: center;
   align-items: center;
 }
 
