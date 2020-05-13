@@ -76,6 +76,7 @@
 nav {
     position: sticky;
     top: 0;
+    z-index: 2;
 }
 
 .hide-on-mobile {
@@ -115,4 +116,10 @@ nav {
   color: var(--orange-color);
   border: 5px solid var(--orange-color);
   margin-left: 3rem;
+}
+
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
+  }
 }
