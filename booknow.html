@@ -6,6 +6,7 @@
     <title>Google I/O</title>
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="booknow.css">
     <link rel="shortcut icon" href="images/Schedule–GoogleI_O2018-0.svg">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/b25b506002.js" crossorigin="anonymous"></script>
@@ -37,7 +38,7 @@
     <nav class="hide-on-mobile">
         <div class="lower-nav">
             <div class="w-10 m-auto">
-                <img src="images/GoogleI_O2020-0.svg">
+                <img src="images/GoogleI_O2020-0.svg" alt="IO_Logo">
             </div>
             <div class="nav-links">
                 <div class="p1">
@@ -61,11 +62,146 @@
     </nav>
     <nav class="show-on-mobile">
         <button class="hamburger">
-            <img src="images/hamburger.png" class="icon">
+            <img src="images/hamburger.png" class="icon" alt="hamburger">
         </button>
     </nav>
+    <section class="summit-logo">
+        <div class="select-ticket align-center">
+            <h4>Select Tickets</h4>
+        </div>
+        <div>
+            <p class="rounded-border">
+                <span class="color-orange"> STEP 1:</span> &nbsp Please select the day when you want to join Google IO 2020.
+            </p>
+        </div>
+        <div>
+            <table class="tickets-table">
+                <thead>
+                    <tr>
+                      <th scope="col">Ticket</th>
+                      <th scope="col">Day 1</th>
+                      <th scope="col">Day 2</th>
+                      <th scope="col">Day 3</th>
+                      <th scope="col">All Days</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                      <th scope="row">Date</th>
+                      <td>7th</td>
+                      <td>8th</td>
+                      <td>9th</td>
+                      <td>7th-9th</td>
+                    </tr>
+                    <tr>
+                      <th scope="row">Limited access</th>
+                      <td>
+                        <p class="color-orange">$ 300</p>
+                        <input type="radio" name="price">
+                      </td>
+                      <td>
+                        <p class="color-orange">$ 200</p>
+                        <input type="radio" name="price">
+                      </td>
+                      <td>
+                        <p class="color-orange">$ 300</p>
+                        <input type="radio" name="price">
+                      </td>
+                      <td>
+                        <p class="color-orange">$ 500</p>
+                        <input type="radio" name="price">
+                      </td>
+                    </tr>
+                    <tr>
+                      <th scope="row">All Access</th>
+                      <td>
+                        <p class="color-orange">$ 500</p>
+                        <input type="radio" name="price">
+                      </td>
+                      <td>
+                        <p class="color-orange">$ 300</p>
+                        <input type="radio" name="price">
+                      </td>
+                      <td>
+                        <p class="color-orange">$ 800</p>
+                        <input type="radio" name="price">
+                      </td>
+                      <td>
+                        <p class="color-orange">$ 1500</p>
+                        <input type="radio" name="price">
+                      </td>
+                    </tr>
+                  </tbody>
+            </table>
+        </div>
+    </section>
+    <section class="select-lunch">
+        <div class="select-ticket align-center">
+            <h4>Select Your Lunch</h4>
+        </div>
+        <div>
+            <p class="rounded-border">
+                <span class="color-orange"> STEP 2:</span> &nbsp Please select the lunch for the registered day.
+            </p>
+        </div>
+        <div class="menu">
+            <div class="menu-head">
+                <p class="align-center">
+                    BreakFast
+                </p>
+            </div>
+            <div class="menu-items">
+                <div class="item">
+                    Chinese
+                    <input type="radio" name="breakfast">
+                </div>
+                <div class="item">
+                    American
+                    <input type="radio" name="breakfast">
+                </div>
+                <div class="item">
+                    Italian
+                    <input type="radio" name="breakfast">
+                </div>
+                <div class="item">
+                    Indian
+                    <input type="radio" name="breakfast">
+                </div>
+            </div>
+        </div>
+        <div class="menu">
+            <div class="menu-head">
+                <p class="align-center">
+                    Lunch
+                </p>
+            </div>
+            <div class="menu-items">
+                <div class="item">
+                    Chinese
+                    <input type="radio" name="lunch">
+                </div>
+                <div class="item">
+                    American
+                    <input type="radio" name="lunch">
+                </div>
+                <div class="item">
+                    Italian
+                    <input type="radio" name="lunch">
+                </div>
+                <div class="item">
+                    Indian
+                    <input type="radio" name="lunch">
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="align-center">
+        <button class="button">
+            Submit
+        </button>
+    </div>
     <footer class="footer">
-        <img src="images/GoogleI_O2020-0.svg" class="image-width-20">
+        <img src="images/GoogleI_O2020-0.svg" class="image-width-20" alt="IO_Logo">
         <span class="margin-left-large">Google I/O 2020. some rights reseved</span>
     </footer>
 </body>
