@@ -42,6 +42,7 @@
 
 .color-orange {
   color: var(--orange-color);
+  padding-right: 5px;
 }
 
 table {
@@ -51,14 +52,15 @@ table {
   border: var(--dark-grey-color) ridge 10px;
 }
 
-td, th {
-  border: 1px solid #dddddd;
+td,
+th {
+  border: 1px solid #ddd;
   text-align: center;
   padding: 8px;
 }
 
 tr:nth-child(odd) {
-  background-color: #dddddd;
+  background-color: #ddd;
 }
 
 .menu {
