@@ -22,6 +22,7 @@
   background-color: var(--dark-grey-color);
   height: 1.75rem;
   width: 100%;
+  padding: .5rem 0;
 }
 
 .upper-nav-a {
@@ -29,7 +30,7 @@
 }
 
 .eas {
-  font-family: Lato;
+  font-family: Lato, sans-serif;
   font-weight: 400;
   font-size: 1rem;
   text-decoration: none;
@@ -79,7 +80,7 @@ nav {
 }
 
 .hide-on-mobile {
-  box-shadow: 0px 5px 300px -20px rgba(0 ,0 ,0 ,0.75);
+  box-shadow: 0 5px 300px -20px rgba(0, 0, 0, 0.75);
 }
 
 .nav-links {
