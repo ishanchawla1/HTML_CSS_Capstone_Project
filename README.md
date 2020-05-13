@@ -1,10 +1,8 @@
 # Google I/O 2020 Website
 
-> One paragraph statement about the project.
+> This is a responsive website for Google I/O event build as a part of HTML/CSS Capstone project in Microverse Curriculum.
 
 ![screenshot](./app_screenshot.png)
-
-This is a responsive website for Google I/O event build as a part of HTML/CSS Capstone project in Microverse Curriculum. 
 
 ## Built With
 
