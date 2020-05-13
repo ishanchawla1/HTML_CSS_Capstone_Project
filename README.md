@@ -11,7 +11,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://livedemo.com)
+[Live Demo Link](https://raw.githack.com/ishanchawla1/HTML_CSS_Capstone_Project/feature/Event_Page/Index.html)
 
 ## Authors
 
