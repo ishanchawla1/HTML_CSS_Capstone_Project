@@ -22,7 +22,7 @@
   background-color: var(--dark-grey-color);
   height: 1.75rem;
   width: 100%;
-  padding: .5rem 0%;
+  padding: 0.5rem 0;
 }
 
 .upper-nav-a {
@@ -88,6 +88,8 @@ nav {
   display: flex;
   justify-content: right;
   color: var(--black-color);
+  justify-content: center;
+  align-items: center;
 }
 
 .no-text-decoration {
