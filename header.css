@@ -12,7 +12,7 @@
 }
 
 @font-face {
-  font-family: cocogoose;
+  font-family: cocogoose, sans-serif;
   src: url("fonts/Cocogoose Pro Regular Trial.ttf");
 }
 
@@ -79,7 +79,7 @@ nav {
 }
 
 .hide-on-mobile {
-  box-shadow: 0px 5px 300px -20px rgba(0, 0 , 0, 0.75);
+  box-shadow: 0px 5px 300px -20px rgba(0 ,0 ,0 ,0.75);
 }
 
 .nav-links {
