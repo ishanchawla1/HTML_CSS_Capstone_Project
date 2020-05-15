@@ -70,12 +70,15 @@ h2 {
   display: grid;
   grid-template-rows: 125px auto 75px;
   grid-template-columns: repeat(5, auto);
+  grid-template-areas: 
+  " . heading-here heading-here heading-here ."
+  "first-program second-program third-program fourth-program fifth-program"
+  ". whole-program whole-program whole-program .";
   grid-gap: 0.5rem;
 }
 
 .heading-here {
-  grid-row: 1;
-  grid-column: 2/5;
+  grid-area: heading-here;
   color: white;
   font-size: 2rem;
   margin: 0 auto;
@@ -112,28 +115,29 @@ h2 {
 }
 
 .first-program {
-  grid-row: 2;
-  grid-column: 1;
+  grid-area: first-program;
 }
 
 .second-program {
-  grid-row: 2;
-  grid-column: 2;
+  grid-area: second-program;
 }
 
 .third-program {
-  grid-row: 2;
-  grid-column: 3;
+  grid-area: third-program;
 }
 
 .fourth-program {
-  grid-row: 2;
-  grid-column: 4;
+  grid-area: fourth-program;
 }
 
 .fifth-program {
-  grid-row: 2;
-  grid-column: 5;
+  grid-area: fifth-program;
+}
+
+.whole-program {
+  grid-area: whole-program;
+  margin: auto;
+  text-decoration: underline;
 }
 
 .first-program:hover,
@@ -165,21 +169,21 @@ h2 {
   }
 }
 
-.whole-program {
-  grid-row: 3;
-  grid-column: 2/5;
-  margin: auto;
-  text-decoration: underline;
-}
-
 .featured-guests {
   display: grid;
   padding: 0 10%;
   grid-template-rows: 200px repeat(4, 1fr);
   grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: 
+  " heading-guest heading-guest "
+  " first-guest second-guest "
+  " third-guest fourth-guest "
+  " fifth-guest sixth-guest "
+  " seventh-guest eighth-guest ";
 }
 
 .heading-guest {
+  grid-area: heading-guest;
   grid-row: 1;
   grid-column: 1/-1;
   color: var(--black-color);
@@ -257,43 +261,35 @@ h2 {
 }
 
 .first-guest {
-  grid-row: 2;
-  grid-column: 1;
+  grid-area: first-guest;
 }
 
 .second-guest {
-  grid-row: 2;
-  grid-column: 2;
+  grid-area: second-guest;
 }
 
 .third-guest {
-  grid-row: 3;
-  grid-column: 1;
+  grid-area: third-guest;
 }
 
 .fourth-guest {
-  grid-row: 3;
-  grid-column: 2;
+  grid-area: fourth-guest;
 }
 
 .fifth-guest {
-  grid-row: 4;
-  grid-column: 1;
+  grid-area: fifth-guest;
 }
 
 .sixth-guest {
-  grid-row: 4;
-  grid-column: 2;
+  grid-area: sixth-guest;
 }
 
 .seventh-guest {
-  grid-row: 5;
-  grid-column: 1;
+  grid-area: seventh-guest;
 }
 
 .eighth-guest {
-  grid-row: 5;
-  grid-column: 2;
+  grid-area: eighth-guest;
 }
 
 .partners {
@@ -348,55 +344,22 @@ h2 {
     grid-template-rows: 125px repeat(5, 1fr) 75px;
     grid-template-columns: 0.5rem 1fr 0.5rem;
     grid-gap: 0.5rem;
-  }
-
-  .whole-program {
-    grid-row: 7;
-    grid-column: 2;
-  }
-
-  .heading-here {
-    grid-row: 1;
-    grid-column: 2;
-  }
-
-  .first-program {
-    grid-row: 2;
-    grid-column: 2;
-  }
-
-  .second-program {
-    grid-row: 3;
-    grid-column: 2;
-  }
-
-  .third-program {
-    grid-row: 4;
-    grid-column: 2;
-  }
-
-  .fourth-program {
-    grid-row: 5;
-    grid-column: 2;
-  }
-
-  .fifth-program {
-    grid-row: 6;
-    grid-column: 2;
+    grid-template-areas: 
+    " . heading-here . "
+    " . first-program . "
+    " . second-program . "
+    " . third-program . "
+    " . fourth-program . "
+    " . fifth-program . "
+    ". whole-program .";
   }
 
   .flex-program {
     flex-direction: row;
   }
 
-  .program-image {
-    padding: 0.25rem;
-  }
-
-  .program-head {
-    padding: 0.25rem;
-  }
-
+  .program-image,
+  .program-head,
   .small-font {
     padding: 0.25rem;
   }
@@ -405,51 +368,16 @@ h2 {
     padding: 10px;
     grid-template-rows: 100px repeat(8, auto);
     grid-template-columns: 1fr;
-  }
-
-  .first-guest {
-    grid-row: 2;
-    grid-column: 1;
-  }
-
-  .second-guest {
-    grid-row: 3;
-    grid-column: 1;
-  }
-
-  .third-guest {
-    grid-row: 4;
-    grid-column: 1;
-  }
-
-  .fourth-guest {
-    grid-row: 5;
-    grid-column: 1;
-  }
-
-  .fifth-guest {
-    grid-row: 6;
-    grid-column: 1;
-  }
-
-  .sixth-guest {
-    grid-row: 7;
-    grid-column: 1;
-  }
-
-  .seventh-guest {
-    grid-row: 8;
-    grid-column: 1;
-  }
-
-  .eighth-guest {
-    grid-row: 9;
-    grid-column: 1;
-  }
-
-  .heading-guest {
-    grid-row: 1;
-    grid-column: 1;
+    grid-template-areas: 
+    " heading-guest "
+    " first-guest "
+    " second-guest "
+    " third-guest "
+    " fourth-guest "
+    " fifth-guest "
+    " sixth-guest "
+    " seventh-guest "
+    " eighth-guest ";
   }
 
   .show-on-mobile {
