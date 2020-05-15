@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google I/O</title>
-    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="index.css">
     <link rel="shortcut icon" href="images/Schedule–GoogleI_O2018-0.svg">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/b25b506002.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -15,28 +18,28 @@
         <div class="upper-nav hide-on-mobile">
             <ul class="upper-nav-a">
                 <li>
-                    <a class="eas" href="#">
+                    <a class="eas text-decoration-none" href="#">
                         English
                     </a>
-                    <a class="eas" href="#">
+                    <a class="eas text-decoration-none" href="#">
                         Logout
                     </a>
-                    <a class="eas" href="#">
+                    <a class="eas text-decoration-none" href="#">
                         Mypage
                     </a>
-                    <a class="icon" href="#">
+                    <a class="icon text-decoration-none mr-2" href="#">
                         <i class="fab fa-twitter"></i>
                     </a>
-                    <a class="icon" href="#">
+                    <a class="icon text-decoration-none mr-2" href="#">
                         <i class="fab fa-facebook-f"></i>
                     </a>
                 </li>
             </ul>
         </div>
     </header>
-    <nav class="hide-on-mobile">
-        <div class="lower-nav">
-            <div class="w-10 m-auto">
+    <nav class="hide-on-mobile w-100">
+        <div class="lower-nav w-100 bg-white">
+            <div class="w-10">
                 <img src="images/GoogleI_O2020-0.svg" alt="IO_Logo">
             </div>
             <div class="nav-links">
@@ -59,10 +62,22 @@
             </div>
         </div>
     </nav>
-    <nav class="show-on-mobile">
-        <button class="hamburger">
-            <img src="images/hamburger.png" class="icon" alt="hamburger">
-        </button>
+    <nav class=" bg-white sticky-top show-on-mobile navbar navbar-expand-lg mb-0">
+        <div class="container-fluid main-nav">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars fa-2x"></i>
+            </button>
+    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link current-page" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link " href="about.html">About</a></li>          
+              <li class="nav-item"><a class="nav-link" href="booknow.html">Book Now</a></li>
+            </ul>
+            
+            <div class="campaign">I/O Campaign</div>
+          </div>
+        </div>
     </nav>
     <section class="event-details">
         <div class="relative-position">
@@ -70,9 +85,9 @@
             <div class="hero-text"><h2>"Innovation in the Open"</h2></div>
         </div>
         <div class="event-info">
-            <div class="support-text">
-                <h1>GOOGLE I/O</h1>
-                <h1>2020</h1>
+            <div class="support-text py-2">
+                <h1 class="m-0">GOOGLE I/O</h1>
+                <h1 class="m-0">2020</h1>
             </div>
             <div class="event-quote">
                 I/O brings together developers from around the globe for talks, hands-on learning with Google experts, and a first look at Google’s latest developer products.

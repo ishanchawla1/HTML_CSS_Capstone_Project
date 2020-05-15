@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google I/O</title>
-    <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="booknow.css">
     <link rel="shortcut icon" href="images/Schedule–GoogleI_O2018-0.svg">
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/b25b506002.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -36,8 +38,8 @@
         </div>
     </header>
     <nav class="hide-on-mobile">
-        <div class="lower-nav">
-            <div class="w-10 m-auto">
+        <div class="lower-nav bg-white">
+            <div class="w-10">
                 <img src="images/GoogleI_O2020-0.svg" alt="IO_Logo">
             </div>
             <div class="nav-links">
@@ -60,17 +62,29 @@
             </div>
         </div>
     </nav>
-    <nav class="show-on-mobile">
-        <button class="hamburger">
-            <img src="images/hamburger.png" class="icon" alt="hamburger">
-        </button>
+    <nav class=" bg-white sticky-top show-on-mobile navbar navbar-expand-lg mb-0">
+        <div class="container-fluid main-nav">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fas fa-bars fa-2x"></i>
+            </button>
+    
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>          
+              <li class="nav-item"><a class="nav-link current-page" href="booknow.html">Book Now</a></li>
+            </ul>
+            
+            <div class="campaign">I/O Campaign</div>
+          </div>
+        </div>
     </nav>
     <section class="summit-logo">
         <div class="select-ticket align-center">
-            <h4>Select Tickets</h4>
+            <h2>Select Tickets</h2>
         </div>
         <div>
-            <p class="rounded-border">
+            <p class="rounded-border align-center">
                 <span class="color-orange"> STEP 1:</span> Please select the day when you want to join Google IO 2020.
             </p>
         </div>
@@ -140,7 +154,7 @@
             <h4>Select Your Lunch</h4>
         </div>
         <div>
-            <p class="rounded-border">
+            <p class="rounded-border align-center">
                 <span class="color-orange"> STEP 2:</span> Please select the lunch for the registered day.
             </p>
         </div>
