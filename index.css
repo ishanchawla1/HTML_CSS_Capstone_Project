@@ -614,7 +614,8 @@ tr:nth-child(odd) {
     margin: 0;
   }
 
-  .event-quote {
+  .event-quote,
+  .event-time {
     width: 80%;
     margin-left: 10%;
   }
@@ -624,6 +625,7 @@ tr:nth-child(odd) {
   }
 
   .event-location {
+    margin-left: 10%;
     padding-bottom: 50px;
   }
 
