@@ -610,6 +610,10 @@ tr:nth-child(odd) {
     display: none;
   }
 
+  .show-on-mobile {
+    display: block !important;
+  }
+
   .campaign {
     margin: 0;
   }
@@ -673,7 +677,6 @@ tr:nth-child(odd) {
   }
 
   .featured-guests {
-    padding: 10px;
     grid-template-rows: 100px repeat(8, auto);
     grid-template-columns: 1fr;
     grid-template-areas:
@@ -686,10 +689,6 @@ tr:nth-child(odd) {
       " sixth-guest "
       " seventh-guest "
       " eighth-guest ";
-  }
-
-  .show-on-mobile {
-    display: block !important;
   }
 
   .past-event {
