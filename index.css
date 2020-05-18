@@ -36,10 +36,18 @@
   font-family: cocogoose, sans-serif;
 }
 
+p {
+  font-size: 1.5rem;
+}
+
+.d-flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
 /* Header styling: */
 
 .upper-nav {
-  background-color: var(--dark-grey-color);
   height: max-content;
   padding: 0.5rem 0;
 }
@@ -77,10 +85,13 @@
   background-color: white !important;
 }
 
+.black-color {
+  color: var(--black-color);
+}
+
 .lower-nav {
   display: flex;
   justify-content: space-between;
-  color: var(--black-color);
   padding: 1rem 5%;
   z-index: 3;
 }
@@ -97,10 +108,7 @@ nav {
 
 .nav-links {
   float: right;
-  display: flex;
   justify-content: right;
-  color: var(--black-color);
-  align-items: center;
 }
 
 .no-text-decoration {
@@ -134,7 +142,6 @@ nav {
   background-repeat: no-repeat;
   object-fit: cover;
   object-position: center;
-  position: relative;
   opacity: 10%;
 }
 
@@ -142,7 +149,6 @@ nav {
   position: absolute;
   bottom: 5%;
   left: 10%;
-  font-family: "Lato", sans-serif;
 }
 
 .relative-position {
@@ -150,7 +156,6 @@ nav {
 }
 
 .support-text {
-  font-family: cocogoose, sans-serif;
   font-weight: 900;
 }
 
@@ -162,8 +167,11 @@ h2 {
   font-size: 3rem !important;
 }
 
-.event-info {
+.background-color-f4 {
   background-color: #f4f4f4;
+}
+
+.event-info {
   padding-left: 10%;
 }
 
@@ -172,21 +180,20 @@ h2 {
   margin-top: 1rem;
   padding: 1.5rem;
   color: var(--black-color);
-  font-family: "Lato", sans-serif;
   border: solid 4px #fff;
+}
+
+.color-dark-grey {
+  color: var(--dark-grey-color);
 }
 
 .event-time {
   margin-top: 3rem;
   font-weight: 700;
-  font-family: cocogoose, sans-serif;
-  color: var(--dark-grey-color);
 }
 
 .event-location {
   font-weight: 400;
-  font-family: "Lato", sans-serif;
-  color: var(--dark-grey-color);
   padding-bottom: 150px;
 }
 
@@ -203,10 +210,13 @@ h2 {
   grid-gap: 0.5rem;
 }
 
+.m-0-auto {
+  margin: 0 auto;
+}
+
 .heading-here {
   grid-area: heading-here;
   color: white;
-  margin: 0 auto;
 }
 
 .heading-guest {
@@ -217,12 +227,7 @@ h2 {
   margin: auto;
 }
 
-.select-ticket {
-  padding: 50px;
-}
-
 .support-event {
-  font-family: cocogoose, sans-serif;
   font-weight: 900;
   padding: 50px;
 }
@@ -251,11 +256,12 @@ h2 {
   background-color: #3c3f46;
 }
 
-.flex-program {
-  display: flex;
-  flex-direction: column;
+.no-wrap {
   flex-wrap: nowrap;
-  align-items: center;
+}
+
+.flex-program {
+  flex-direction: column;
   font-size: 2.4rem;
 }
 
@@ -318,6 +324,15 @@ h2 {
   .main-program {
     padding: 2rem 0;
   }
+  
+  .small-font {
+    font-size: 1.25rem;
+  }
+
+  .event-quote,
+  .about-event-quote{
+    width: 70%;
+  }
 }
 
 .featured-guests {
@@ -379,7 +394,6 @@ h2 {
 
 .guest-details {
   margin-top: 10px;
-  color: #000;
 }
 
 .first-guest {
@@ -424,10 +438,7 @@ h2 {
 }
 
 .partners-logo {
-  display: flex;
   justify-content: space-around;
-  flex-wrap: nowrap;
-  align-items: center;
 }
 
 .restrict-partner-image {
@@ -438,10 +449,7 @@ h2 {
 
 .footer {
   padding: 50px;
-  display: flex;
   justify-content: center;
-  flex-wrap: nowrap;
-  align-items: center;
 }
 
 .margin-left-large {
@@ -460,17 +468,11 @@ h2 {
   max-width: 100%;
 }
 
-.about-event {
-  background-color: #f4f4f4;
-  margin: 0 auto;
-}
-
 .about-event-quote {
   width: 50%;
   margin: 1rem auto;
   padding: 1.5rem;
   color: var(--dark-grey-color);
-  font-family: "Lato", sans-serif;
   border: solid 4px #fff;
 }
 
@@ -478,18 +480,14 @@ h2 {
   width: max-content;
   max-width: 100%;
   margin: 5rem auto 0.25rem auto;
-  font-family: "Lato", sans-serif;
 }
 
 .email {
-  font-family: "Lato", sans-serif;
   padding-bottom: 5rem;
   text-decoration: underline;
 }
 
 .summit-logo {
-  background-color: #fff;
-  padding-bottom: 50px;
   border-bottom: 1px solid var(--dark-grey-color);
 }
 
@@ -512,7 +510,6 @@ h2 {
 .event-image {
   padding: 0 0.5rem 0.5rem 0.5rem;
   background-size: cover;
-  position: relative;
 }
 
 .event-one {
@@ -532,12 +529,6 @@ h2 {
   color: #fff;
   vertical-align: middle;
   height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.past {
-  padding-bottom: 150px;
 }
 
 .dark-background {
@@ -571,6 +562,7 @@ th {
   border: 1px solid #ddd;
   text-align: center !important;
   padding: 8px !important;
+  font-size: 1.25rem;
 }
 
 tr:nth-child(odd) {
@@ -586,9 +578,7 @@ tr:nth-child(odd) {
 }
 
 .menu-head {
-  background-color: #f4f4f4;
   height: 40px;
-  padding-top: 15px;
 }
 
 .menu-items {
@@ -628,7 +618,6 @@ tr:nth-child(odd) {
   }
 
   .event-location {
-    margin-left: 10%;
     padding-bottom: 50px;
   }
 
@@ -713,13 +702,14 @@ tr:nth-child(odd) {
   .event-name,
   .footer,
   .past-event,
-  .old-event {
-    padding: 10px;
+  .old-event,
+  .credit-section {
+    padding: 30px;
   }
 
   .link-without-decoration {
-    text-decoration: none;
-    color: #000;
+    text-decoration: none !important;
+    color: #000 !important;
   }
 
   h1 {
